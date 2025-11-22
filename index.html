@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refruta - Convierte Residuos en Ingresos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Fuente Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        
+        .hero-bg {
+            /* --- INSTRUCCIONES PARA CAMBIAR LA FOTO --- */
+            /* 1. Sube tu foto a internet o copia el enlace de una que te guste. */
+            /* 2. Pega el enlace dentro de las comillas '...' en la línea de abajo (url). */
+            
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_noticia__small/public/media/2024/05/29/piel_naranja_salud_cardiovascular.jpg.webp');
+            
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i data-lucide="leaf" class="h-8 w-8 text-green-600"></i>
+                    <span class="font-bold text-2xl tracking-tight text-green-800">Refruta</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#como-funciona" class="text-stone-600 hover:text-green-600 px-3 py-2 font-medium">Cómo Funciona</a>
+                    <a href="#beneficios" class="text-stone-600 hover:text-green-600 px-3 py-2 font-medium">Beneficios</a>
+                    <a href="#residuos" class="text-stone-600 hover:text-green-600 px-3 py-2 font-medium">Qué Recolectamos</a>
+                    <a href="#unete" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full font-bold transition">Unirse Ahora</a>
+                </div>
+                <!-- Mobile button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-stone-600 hover:text-green-600">
+                        <i data-lucide="menu" class="h-8 w-8"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#como-funciona" class="block px-4 py-3 text-stone-600 hover:bg-green-50">Cómo Funciona</a>
+            <a href="#beneficios" class="block px-4 py-3 text-stone-600 hover:bg-green-50">Beneficios</a>
+            <a href="#unete" class="block px-4 py-3 text-orange-600 font-bold bg-orange-50">Unirse Ahora</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex items-center justify-center text-center px-4 pt-16">
+        <div class="max-w-4xl mx-auto text-white">
+            <span class="bg-green-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4 inline-block">Para Mercados y Restaurantes</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Tus cáscaras valen dinero.<br>
+                <span class="text-orange-400">Nosotros las recogemos.</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light text-stone-200">
+                Únete a la red de Refruta. Transforma tus residuos orgánicos en ingresos extra mensuales y ayuda al planeta.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#unete" class="bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-lg flex items-center justify-center gap-2">
+                    Empezar a Reciclar <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#como-funciona" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition">
+                    Ver Proceso
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Qué Hacemos (Value Prop) -->
+    <section id="beneficios" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-green-800 mb-4">¿Qué es Refruta?</h2>
+            <p class="text-lg text-stone-600 max-w-3xl mx-auto mb-12">
+                Somos un proyecto de economía circular. Recolectamos cáscaras de frutas cítricas y piña de negocios locales para producir aguas 100% naturales, sin aditivos. <br>
+                <strong class="text-green-600">Buscamos socios estratégicos como tú</strong> que generen estos residuos diariamente.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border border-stone-200 rounded-xl hover:shadow-xl transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="coins" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Ingresos Extra</h3>
+                    <p class="text-stone-500">Recibe entre <span class="font-bold text-green-700">S/ 50 y S/ 200 mensuales</span> dependiendo del volumen de cáscaras limpias que nos entregues.</p>
+                </div>
+                <div class="p-6 border border-stone-200 rounded-xl hover:shadow-xl transition duration-300">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="recycle" class="w-8 h-8 text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Menos Basura</h3>
+                    <p class="text-stone-500">Reduce drásticamente la cantidad de basura que tu negocio elimina, manteniendo tu local más limpio y ordenado.</p>
+                </div>
+                <div class="p-6 border border-stone-200 rounded-xl hover:shadow-xl transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="sprout" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Certificado Verde</h3>
+                    <p class="text-stone-500">Destaca tu negocio como un local sostenible y responsable con el medio ambiente ante tus clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué Recolectamos -->
+    <section id="residuos" class="py-16 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">¿Qué residuos necesitamos?</h2>
+                    <p class="mb-6 text-stone-600">Para garantizar la calidad de nuestras aguas naturales, necesitamos que separes exclusivamente las cáscaras de las siguientes frutas:</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                            <span class="text-2xl">🍍</span>
+                            <span class="font-semibold">Piña</span>
+                            <span class="text-sm text-stone-400 ml-auto">Cáscara y corazón</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                            <span class="text-2xl">🍊</span>
+                            <span class="font-semibold">Naranja y Mandarina</span>
+                            <span class="text-sm text-stone-400 ml-auto">Sin pepas preferiblemente</span>
+                        </li>
+                        <li class="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                            <span class="text-2xl">🍋</span>
+                            <span class="font-semibold">Limón</span>
+                            <span class="text-sm text-stone-400 ml-auto">Cáscara limpia</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                        <div class="flex gap-2">
+                            <i data-lucide="alert-triangle" class="text-red-500"></i>
+                            <h4 class="font-bold text-red-700">Importante: Separación</h4>
+                        </div>
+                        <p class="text-sm text-red-600 mt-1">
+                            Las cáscaras <strong>NO</strong> deben mezclarse con servilletas, plásticos, restos de comida cocida u otros desperdicios. Deben estar en el contenedor exclusivo que te brindaremos.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 relative h-96 rounded-2xl overflow-hidden shadow-2xl group">
+                    <!-- Cambio de imagen: Mix de frutas cítricas y piña -->
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=2070&auto=format&fit=crop" alt="Variedad de frutas cítricas y piña" class="absolute inset-0 w-full h-full object-cover transition transform group-hover:scale-110 duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                        <p class="text-white font-medium">Buscamos cáscaras frescas y limpias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona (Timeline) -->
+    <section id="como-funciona" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Coordinación y Recojo</h2>
+            
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-green-300 before:to-transparent">
+                
+                <!-- Paso 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-green-100 group-hover:bg-green-500 transition shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-bold text-green-800 group-hover:text-white">1</span>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-lg mb-1 text-green-700">Registro y Capacitación</h3>
+                        <p class="text-stone-600 text-sm">Te inscribes y te visitamos para entregarte los contenedores especiales y explicarle a tu personal cómo separar las cáscaras correctamente.</p>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-green-100 group-hover:bg-green-500 transition shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-bold text-green-800 group-hover:text-white">2</span>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-lg mb-1 text-green-700">Acopio Diario</h3>
+                        <p class="text-stone-600 text-sm">Tu equipo deposita las cáscaras limpias en el contenedor durante sus operaciones diarias. ¡Cero esfuerzo extra!</p>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-green-100 group-hover:bg-green-500 transition shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-bold text-green-800 group-hover:text-white">3</span>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-lg mb-1 text-green-700">Recojo Programado</h3>
+                        <p class="text-stone-600 text-sm">Nuestro camión pasa por tu local en los horarios acordados (mañana o noche) para retirar los residuos y pesar la carga.</p>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-green-100 group-hover:bg-green-500 transition shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-bold text-green-800 group-hover:text-white">4</span>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-orange-50 border border-orange-200 rounded-xl shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-lg mb-1 text-orange-700">Pago Mensual</h3>
+                        <p class="text-stone-600 text-sm">A fin de mes, calculamos el total de kilos recolectados y te depositamos tu compensación (S/ 50 - S/ 200).</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Inscripción -->
+    <section id="unete" class="py-20 bg-green-900 text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-green-800 opacity-50 blur-3xl"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 relative z-10 flex flex-col md:flex-row gap-12 items-start">
+            
+            <div class="w-full md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">Únete a la red Refruta</h2>
+                <p class="text-green-100 mb-8 text-lg">
+                    Deja de pagar para que se lleven tu basura. Empieza a cobrar por tus insumos. Completa el formulario y coordinaremos una visita a tu local para evaluar el volumen y establecer la logística.
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-green-800 flex items-center justify-center text-orange-400">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Cobertura Actual</h4>
+                            <p class="text-sm text-green-200">Distritos principales de Lima</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-green-800 flex items-center justify-center text-orange-400">
+                            <i data-lucide="truck"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Logística Incluida</h4>
+                            <p class="text-sm text-green-200">Nosotros ponemos el transporte y los contenedores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 bg-white text-stone-800 p-8 rounded-2xl shadow-2xl" id="form-card">
+                <form onsubmit="event.preventDefault(); document.getElementById('form-card').innerHTML = '<div class=\'text-center py-12\'><div class=\'inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4\'><svg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'text-green-600\'><path d=\'M20 6 9 17l-5-5\'/></svg></div><h3 class=\'text-xl font-bold text-green-800 mb-2\'>¡Gracias!</h3><p class=\'text-stone-600 text-lg\'>solicitud enviada correctamente</p></div>';">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-green-900">Formulario de Interés</h3>
+                    
+                    <div class="grid grid-cols-1 gap-4 mb-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Nombre del Negocio</label>
+                            <input type="text" placeholder="Ej. Juguería El Sol" class="w-full border border-stone-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500 outline-none" required>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-1">Tipo</label>
+                                <select class="w-full border border-stone-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500 outline-none">
+                                    <option>Restaurante</option>
+                                    <option>Mercado / Puesto</option>
+                                    <option>Hotel</option>
+                                    <option>Catering</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-1">Teléfono</label>
+                                <input type="tel" placeholder="999 999 999" class="w-full border border-stone-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500 outline-none" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Dirección del Local</label>
+                            <input type="text" placeholder="Av. Principal 123, Distrito" class="w-full border border-stone-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500 outline-none" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Residuos estimados (kg/semana)</label>
+                            <input type="number" placeholder="Ej. 50" class="w-full border border-stone-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500 outline-none">
+                            <p class="text-xs text-stone-500 mt-1">Un aproximado nos ayuda a planear la ruta.</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition text-lg shadow-lg">
+                        Solicitar Visita
+                    </button>
+                    <p class="text-xs text-center mt-4 text-stone-400">Sus datos serán usados solo para coordinación logística.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center md:text-left grid md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                    <i data-lucide="leaf" class="text-green-500"></i>
+                    <span class="text-2xl font-bold text-white">Refruta</span>
+                </div>
+                <p class="max-w-xs mx-auto md:mx-0">Transformando residuos en recursos naturales. Una iniciativa peruana de economía circular.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contacto</h4>
+                <ul class="space-y-2">
+                    <li>refruta@gmail.com</li>
+                    <li>+51 943 198 133</li>
+                    <li>Av Buenavista 748</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Síguenos</h4>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#" class="hover:text-green-500 transition"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="hover:text-green-500 transition"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="hover:text-green-500 transition"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-stone-800 mt-12 pt-8 text-center text-sm">
+            &copy; 2024 Refruta. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
